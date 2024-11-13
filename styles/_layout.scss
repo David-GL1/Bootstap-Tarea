@@ -1,0 +1,268 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.logo__hotel{
+    width: 100px; 
+    height: 90px;
+}
+
+.carousel__item--img {
+    height: 585px;
+    width: $fullSize; 
+    object-fit: cover; 
+
+    @include phones{
+        height: 550px;
+    }
+}
+
+.carousel__card {
+    max-width: 300px;
+    margin-left: 80px;
+
+    @include phones{
+        max-width: 200px;
+        margin-left: 10px;
+    }
+}
+
+.divider {
+    margin: 10px 0;
+}
+
+.containerText,
+.tituloTiposhoteles{
+  margin-bottom: 130px;
+  margin-top: 130px;
+}
+
+.container__cards{
+    @include phones {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.containerServicios__card{
+    min-height: 390px;
+}
+
+.containerServicios__card--img {
+    height: 250px;      
+    object-fit: cover; 
+}
+
+.containerKnowmore__container--img{
+    height: 500px;
+}
+  
+.containerKnowmore__card{
+    height: $fullSize;
+}
+
+
+.containerKnowmore__card--body {
+    @include flex-layout;
+    justify-content: $center;
+}
+
+.carousel__itemContainer{
+    padding: 7px;
+}
+  
+.carousel__itemContainer--title{
+    margin: 0;
+}
+
+.containerExperience{
+    @include flex-layout;
+    justify-content: $center;
+    gap: 10px;
+    margin-bottom: 30px;
+    margin-top: 115px;
+
+    @include phones{
+        padding: 12px;
+        text-align: $center;
+        margin-top: 130px;
+        margin-bottom: 130px;
+    }
+}
+  
+.containerRanking{
+    margin: 0 auto 70px auto;
+    width: 30%;
+
+    @include phones{
+        width: 90%;
+    }
+}
+  
+.containerContacto{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+}
+  
+.containerContacto__title{
+    margin-bottom: 25px;
+}
+  
+.containerContacto__container{
+    width: 80%;
+    margin: 0 auto;
+
+    @include phones {
+        width: $fullSize;
+        margin: 0;
+
+    }
+}
+
+.input-group{
+    @include phones {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.containerContacto__container--input{
+    @include phones {
+        width: $fullSize !important;
+        border-radius: 10px;
+    }
+}
+
+.containerUbicacion{
+    width: 80%;
+    display: flex;
+    align-items: $center;
+    justify-content: space-around;
+    margin: 0 auto 50px auto;
+
+    @include phones {
+        @include flex-center-column
+    }
+
+    @include tablets{
+        @include flex-center-column
+    }
+}
+  
+.containerMap{
+    margin-top: 30px;
+}
+
+.mapa1{
+    @include phones {
+        display: $none;
+    }
+}
+
+.mapa2{
+    display: $none;
+
+    @include phones{
+        display: block;
+    }
+}
+
+
+
+.containerMap__title{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+  
+.containerUbicacionlinks{
+    @include flex-layout;
+}
+  
+.containerUbicacion__img{
+    width:160px;
+}
+
+.container__footer {
+    display: flex;
+    justify-content: space-between;
+
+    @include phones{
+        padding-left: 0.4rem;
+    }
+}
+
+.footer__section--socialMedialink{
+    @include tablets{
+     @include flex-layout;
+    }
+}
+
+.footer__section--socialMedialistaItem{
+    margin-bottom: 10px;
+}
+  
+.footer__section--socialMediaimg{
+    width:  35px;
+    height: 35px;
+    margin-right: 12px; 
+    object-fit: cover;
+}
+
+//Estilos catalogo 
+
+.main__container{
+    margin-bottom: 40px;
+}
+
+.container__grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: auto;
+
+    @include phones{
+        padding: 0;
+    }
+}
+
+.container__grid--card{
+    min-height: 700px;
+    margin-bottom: 25px;
+
+    @include phones{
+        min-height: 600px;
+    }
+}
+
+.container__grid--boldText{
+    margin: 0;
+    padding: 0;
+}
+
+.title{
+    margin-bottom: 30px;
+    margin-top: 20px;;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

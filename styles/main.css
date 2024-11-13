@@ -1,0 +1,433 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.logo__hotel {
+  width: 100px;
+  height: 90px;
+}
+
+.carousel__item--img {
+  height: 585px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 40rem) {
+  .carousel__item--img {
+    height: 550px;
+  }
+}
+
+.carousel__card {
+  max-width: 300px;
+  margin-left: 80px;
+}
+@media screen and (max-width: 40rem) {
+  .carousel__card {
+    max-width: 200px;
+    margin-left: 10px;
+  }
+}
+
+.divider {
+  margin: 10px 0;
+}
+
+.containerText,
+.tituloTiposhoteles {
+  margin-bottom: 130px;
+  margin-top: 130px;
+}
+
+@media screen and (max-width: 40rem) {
+  .container__cards {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.containerServicios__card {
+  min-height: 390px;
+}
+
+.containerServicios__card--img {
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.containerKnowmore__container--img {
+  height: 500px;
+}
+
+.containerKnowmore__card {
+  height: 100%;
+}
+
+.containerKnowmore__card--body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel__itemContainer {
+  padding: 7px;
+}
+
+.carousel__itemContainer--title {
+  margin: 0;
+}
+
+.containerExperience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  margin-top: 115px;
+}
+@media screen and (max-width: 40rem) {
+  .containerExperience {
+    padding: 12px;
+    text-align: center;
+    margin-top: 130px;
+    margin-bottom: 130px;
+  }
+}
+
+.containerRanking {
+  margin: 0 auto 70px auto;
+  width: 30%;
+}
+@media screen and (max-width: 40rem) {
+  .containerRanking {
+    width: 90%;
+  }
+}
+
+.containerContacto {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+}
+
+.containerContacto__title {
+  margin-bottom: 25px;
+}
+
+.containerContacto__container {
+  width: 80%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 40rem) {
+  .containerContacto__container {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 40rem) {
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 40rem) {
+  .containerContacto__container--input {
+    width: 100% !important;
+    border-radius: 10px;
+  }
+}
+
+.containerUbicacion {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto 50px auto;
+}
+@media screen and (max-width: 40rem) {
+  .containerUbicacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 40rem) and (max-width: 56.25rem) {
+  .containerUbicacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.containerMap {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 40rem) {
+  .mapa1 {
+    display: none;
+  }
+}
+
+.mapa2 {
+  display: none;
+}
+@media screen and (max-width: 40rem) {
+  .mapa2 {
+    display: block;
+  }
+}
+
+.containerMap__title {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.containerUbicacionlinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.containerUbicacion__img {
+  width: 160px;
+}
+
+.container__footer {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 40rem) {
+  .container__footer {
+    padding-left: 0.4rem;
+  }
+}
+
+@media screen and (min-width: 40rem) and (max-width: 56.25rem) {
+  .footer__section--socialMedialink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer__section--socialMedialistaItem {
+  margin-bottom: 10px;
+}
+
+.footer__section--socialMediaimg {
+  width: 35px;
+  height: 35px;
+  margin-right: 12px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main__container {
+  margin-bottom: 40px;
+}
+
+.container__grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: auto;
+}
+@media screen and (max-width: 40rem) {
+  .container__grid {
+    padding: 0;
+  }
+}
+
+.container__grid--card {
+  min-height: 700px;
+  margin-bottom: 25px;
+}
+@media screen and (max-width: 40rem) {
+  .container__grid--card {
+    min-height: 600px;
+  }
+}
+
+.container__grid--boldText {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.navbar,
+.carousel__card--title,
+.containerText__title,
+.tituloTiposhoteles__title,
+.carousel__itemContainer--title,
+.containerExperience__title,
+.containerExperience__text,
+.containerRanking__info--title,
+.containerContacto__title,
+.containerMap__title,
+.footer__section--title,
+.card-title {
+  font-family: "Playfair Display SC", serif;
+}
+
+.carousel__card--text,
+.carousel__card--link,
+.containerExperience__text,
+.containerRanking__info--text,
+.containerContacto__submit,
+.containerContacto__container--label,
+.footer__section--Text,
+.footer__section--navegationLink,
+.footer__section--socialMedialink,
+.footer__section--contactoLink,
+.footer__section--containerCopyrighttext,
+.containerUbicacion__link,
+.card-text,
+.container__grid--listItem,
+.container__grid--boldText {
+  font-family: "Lora", serif;
+}
+
+.containerUbicacion__link,
+.footer__section--navegationLink,
+.footer__section--contactoLink,
+.footer__section--socialMedialink {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.navbar {
+  background-color: #FFFFFF;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.divider {
+  border-top: 2px solid #030303;
+}
+
+.carousel__card {
+  text-align: justify;
+}
+
+.carousel__card--text {
+  text-align: justify;
+}
+
+.carousel__card--link {
+  text-align: center;
+  text-decoration: none;
+}
+
+.containerText,
+.tituloTiposhoteles {
+  text-align: center;
+}
+
+.containerKnowmore__card--link {
+  text-decoration: none;
+}
+
+.carousel__itemContainer--title {
+  color: rgb(73, 82, 90);
+  font-size: 2.5rem;
+}
+
+.containerContacto {
+  background-color: #293348;
+  color: #FFFFFF;
+}
+
+.containerMap__title {
+  text-align: center;
+}
+
+@media screen and (max-width: 40rem) {
+  .texto-input {
+    color: #FFFFFF;
+    background-color: transparent;
+    border: none;
+  }
+}
+
+.containerContacto__title {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.containerContacto__container--input:focus {
+  border-color: #5a9cff; /* Color de borde al enfocarse */
+  box-shadow: 0 0 10px rgba(90, 156, 255, 0.5);
+}
+
+.footer {
+  color: #FFFFFF;
+}
+
+.footer__section--title {
+  text-align: center;
+}
+@media screen and (max-width: 40rem) {
+  .footer__section--title {
+    text-align: start;
+  }
+}
+
+.footer__section--Text {
+  text-align: justify;
+}
+
+.container__grid--link {
+  text-decoration: none;
+}
+
+.title {
+  text-align: center;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.container__grid--boldText {
+  font-weight: 600;
+  text-align: center;
+}
+
+.container__grid::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+.container__grid::-webkit-scrollbar-track {
+  background: #2C3E50;
+  border-radius: 6px;
+}
+
+.container__grid::-webkit-scrollbar-thumb {
+  background: #34495E;
+  border-radius: 8px;
+}
+
+.container__grid::-webkit-scrollbar-thumb:hover {
+  background: #1ABC9C;
+}/*# sourceMappingURL=main.css.map */

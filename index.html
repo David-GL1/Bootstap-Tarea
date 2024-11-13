@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap practica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <!--  Fuente Playfair Display SC -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!--  Fuente Lora-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+
+     <!-- Header -->
+    <header>
+
+      <!-- Barra con links -->
+        
+        <nav class="navbar navbar-expand-lg" data-bs-theme="light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img  class="logo__hotel" src="img/logo-hotel.png" alt="Bootstrap" >
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="catalogo.html">Hoteles</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Habitaciones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Promociones</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Ubicaciones
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end"> <!-- Ajuste aplicado -->
+                      <li><a class="dropdown-item" href="#">Ciudad de Mexico</a></li>
+                      <li><a class="dropdown-item" href="#">Puebla</a></li>
+                      <li><a class="dropdown-item" href="#">Nuevo Leon</a></li>
+                      <li><a class="dropdown-item" href="#">Chihuahua</a></li>
+                      <li><a class="dropdown-item" href="#">Quintana Roo</a></li>
+                      <li><a class="dropdown-item" href="#">Guadalajara</a></li>
+                      <li><a class="dropdown-item" href="#">Aguascalientes</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>          
+    </header>
+
+  <!-- Main -->
+
+    <main class="main">
+
+       <!-- Primer carrusel de imagenes -->
+
+      <section id="carouselExampleSlidesOnly" class="carousel slide sectionMain" data-bs-ride="carousel" data-bs-interval="10000">
+        <div class="carousel-inner ">
+          <div class="carousel-item active position-relative">
+            <img src="img/pixelcut-export.jpeg" class="d-block w-100 carousel__item--img" alt="Imagen de fachada del hotel">
+            <div  class="position-absolute top-50 start-0 translate-middle-y card-container">
+              <div class="card p-3 carousel__card">
+                <h5 class="carousel__card--title" >Instalaciones</h5>
+                <div class="divider"></div> 
+                <p class="carousel__card--text">Nos distinguimos por nuestra impresionante arquitectura en cada uno de nuestros hoteles que combina el estilo clásico y moderno. Cada rincón está diseñado para ofrecer una experiencia de lujo y confort, con amplios salones, finos acabados y una estructura que impone desde la distancia.</p>
+                <a class="carousel__card--link" href="catalogo.html">Conocer hoteles</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item position-relative ">
+            <img src="img/vista.jpg" class="d-block w-100 carousel__item--img" alt="Vista panorámica">
+            <div class="position-absolute top-50 start-0 translate-middle-y card-container">
+              <div class="card p-3 carousel__card">
+                <h5 class="carousel__card--title">Vistas</h5>
+                <div class="divider"></div>
+                <p class="carousel__card--text">Las vistas con las que cuenta el hotel son una obra de arte por sí mismas. Con una ubicación estratégica, los huéspedes pueden disfrutar de paisajes que abarcan desde montañas hasta el mar, proporcionando un entorno de tranquilidad y belleza natural.</p>
+                <a class="carousel__card--link" href="catalogo.html">Conocer hoteles</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item position-relative">
+            <img src="img/restaurante.jpg" class="d-block w-100 carousel__item--img" alt="Imagen del restaurante">
+            <div class="position-absolute top-50 start-0 translate-middle-y card-container">
+              <div class="card p-3 carousel__card">
+                <h5 class="carousel__card--title">Restaurante</h5>
+                <div class="divider"></div> 
+                <p class="carousel__card--text">Somos un destino culinario que deleita los sentidos. 
+                  Ofrecemos un menú cuidadosamente elaborado con platos internacionales y locales, preparados con ingredientes frescos y servidos 
+                  en un ambiente elegante y acogedor.</p>
+                  <a class="carousel__card--link" href="catalogo.html">Conocer hoteles</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contenedor con width de 100% "texto"-->
+
+      <article class="container-fluid containerText ">
+        <h3 class="containerText__title">Contamos con los mejores servicios en cada uno de nuestro hoteles</h3>
+      </article>
+
+      <!-- Section servicios del hotel -->
+
+      <section class="container-fluid text-center containerServicios ">
+        <div class="row container__cards">
+            <article class="col-12 col-md-6 mb-4">
+                <div class="card containerServicios__card">
+                    <img src="img/gyn.jpg" class="containerServicios__card--img" alt="Imagen de gimnasio">
+                    <div class="card-body  containerServicios__card--body ">
+                        <h5 class="card-title  containerServicios__card--title">Gimnasio</h5>
+                        <p class="card-text  containerServicios__card--text">Nuestro gimnasio está equipado con áreas de pesas libres y estaciones de pesas integradas, así como un espacio dedicado para deportes funcionales como el CrossFit.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="col-12 col-md-6 mb-4">
+                <div class="card containerServicios__card">
+                    <img src="img/spa.jpg" class="containerServicios__card--img" alt="Imagen de spa">
+                    <div class="card-body containerServicios__card--body">
+                        <h5 class="card-title containerServicios__card--title">Spa</h5>
+                        <p class="card-text containerServicios__card--text">Descubre un oasis de relajación en nuestro spa, donde ofrecemos tratamientos rejuvenecedores, masajes terapéuticos y terapias de bienestar.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="col-12 col-md-6 mb-5">
+                <div class="card  containerServicios__card">
+                    <img src="img/restaurante-servicio.jpg" class="containerServicios__card--img" alt="Imagen de restaurante">
+                    <div class="card-body containerServicios__card--body">
+                        <h5 class="card-title containerServicios__card--title">Restaurante</h5>
+                        <p class="card-text containerServicios__card--text">Ofrecemos un menú exquisito que fusiona sabores locales e internacionales, preparado con ingredientes frescos y de calidad.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="col-12 col-md-6 mb-5"> 
+                <div class="card containerServicios__card ">
+                    <img src="img/piscina.jpg" class="containerServicios__card--img" alt="Imagen de piscina">
+                    <div class="card-body containerServicios__card--body">
+                        <h5 class="card-title containerServicios__card--title">Piscina</h5>
+                        <p class="card-text containerServicios__card--text">Disfruta de nuestra piscina en un entorno rodeado de áreas verdes, ideal para relajarte y escapar del estrés.</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+      </section>
+    
+    <!-- Section conocer mas -->
+
+    <section class="container-fluid text-center p-0 mb-2 containerKnowmore">
+      <article class="row g-0">
+        <div class="col-md-5">
+          <div class="card  containerKnowmore__card "> 
+              <div class="containerKnowmore__card--body card-body">
+                  <h5  class="card-title  containerKnowmore__card--title">Conoce más acerca de nuestros deliciosos platillos</h5>
+                  <p class="card-text  containerKnowmore__card--text">Disfruta de una variedad de platillos preparados con los ingredientes más frescos y de calidad. Nuestro menú se adapta a cada ubicación y hotel, ofreciendo una experiencia gastronómica única en cada visita. Te invitamos a explorar nuestras opciones, donde la creatividad y el sabor se unen para deleitar tu paladar.</p>
+                  <a href="#" class="containerKnowmore__card--link">Conocer más</a>
+              </div>
+          </div>
+      </div>
+          <div class="col-md-7  containerKnowmore__container">
+              <img src="img/comida.jpg" class=" containerKnowmore__container--img img-fluid" alt="Platillo">
+          </div>
+      </article>
+    </section>
+  
+  <section class="container-fluid text-center p-0  containerSecond__Knowmore containerKnowmore">
+      <article class="row g-0">
+          <div class="col-md-7 containerKnowmore__container">
+              <img src="img/coctel.jpg" class="containerKnowmore__container--img img-fluid" alt="Coctel">
+          </div>
+          <div class="col-md-5">
+              <div class="card containerKnowmore__card">
+                  <div class=" containerKnowmore__card--body card-body">
+                      <h5 class="card-title  containerKnowmore__card--title">Conoce más acerca de nuestra coctelería</h5>
+                      <p class="card-text  containerKnowmore__card--text">Disfruta de una experiencia única en nuestra coctelería, donde mezclamos sabores exquisitos y presentaciones creativas para ofrecerte cócteles inolvidables. Perfecto para relajarte y celebrar momentos especiales.</p>
+                      <a href="pagina.html" class="containerKnowmore__card--link">Conocer más</a>
+                  </div>
+              </div>
+          </div>
+      </article>
+  </section>
+
+  <!-- Contenedor con width de 100% "texto"-->
+
+  <article class="container-fluid tituloTiposhoteles">
+    <h3 class="tituloTiposhoteles__title">Contamos con diferentes tipos de hoteles en cada estado de la Republica Mexicana</h3>
+  </article>
+
+    <!-- Segundo carrusel-->
+
+  <section id="carouselExampleFade" class="carousel slide carousel-fade">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="carousel__item--img" src="img/solo adultos.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption  d-md-block carousel__itemContainer card">
+          <h5 class="carousel__itemContainer--title ">Hotel solo para Adultos</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="carousel__item--img" src="img/hotel2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block  carousel__itemContainer card">
+          <h5 class="carousel__itemContainer--title">Hotel familiar</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="carousel__item--img" src="img/hotel1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block  carousel__itemContainer card">
+          <h5 class="carousel__itemContainer--title">Hotel Ecologico</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="carousel__item--img" src="img/cabaña.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block  carousel__itemContainer card">
+          <h5 class="carousel__itemContainer--title">Apart-Hotel</h5>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </section>
+
+   <!-- Contenedor experiencia-->
+
+  <article class="containerExperience">
+    <h3  class="containerExperience__title">Contamos con mas de 20 años de experiencia</h3>
+    <h4 class="containerExperience__text">Siempre brindandote los mejores servicios para tu comodidad</h4>
+  </article>
+
+   <!-- Contenedor ranking Mexico-->
+
+  <section class="card text-center containerRanking ">
+    <img src="img/top10.jpeg" class="containerRanking__img img-fluid" alt="Ranking 10">
+    <div class="card-body text-center containerRanking__info">
+      <h5 class="card-title containerRanking__info--title">Los mejores hoteles de Mexico</h5>
+      <p class="card-text containerRanking__info--text">Estamos ubicados en el top 10 de los mejores hoteles de Mexico</p>
+    </div>
+  </section>
+
+  <!-- Formulario de contacto-->
+
+  <section class="container-fluid containerContacto">
+
+    <h2 class="containerContacto__title">Pongase en contacto con nosotros</h2>
+
+    <div class="input-group mb-3 containerContacto__container">
+      <span class="input-group-text texto-input">Nombre y apellido</span>
+      <input type="text" aria-label="First name" class="form-control containerContacto__container--input" placeholder="Nombre">
+      <input type="text" aria-label="Last name" class="form-control  containerContacto__container--input" placeholder="Apellido">
+    </div>
+
+    <div class="mb-3 containerContacto__container">
+      <label for="emailInput" class="form-label containerContacto__container--label">Correo electrónico</label>
+      <input type="email" class="form-control containerContacto__container--input" id="emailInput" placeholder="Correo electrónico">
+    </div>
+
+    <div class="mb-3 containerContacto__container">
+      <label for="phoneInput" class="form-label  containerContacto__container--label">Número telefónico</label>
+      <input type="text" class="form-control containerContacto__container--input" id="phoneInput" placeholder="Número telefónico">
+    </div>
+
+    <div class="containerButton__sumbit d-grid  mx-auto  mb-4 ">
+      <button class="btn  btn-light containerContacto__submit" type="button">Contactarme</button>
+    </div>
+
+      <!-- Contenedor de ubicacion con logo -->
+
+    <div class="containerUbicacion ">
+      <div class="containerMap">
+          <h3 class="containerMap__title">Ubicacion Hotel Matriz</h3>
+          <iframe class="mapa1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.7587297450855!2d-99.17740782662037!3d19.422827840996472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff954576827d%3A0x202ea0aa28ec5774!2sTorre%20BBVA!5e0!3m2!1ses-419!2smx!4v1731440548494!5m2!1ses-419!2smx" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      </div>
+          <iframe class="mapa2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.7587297450855!2d-99.17740782662037!3d19.422827840996472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff954576827d%3A0x202ea0aa28ec5774!2sTorre%20BBVA!5e0!3m2!1ses-419!2smx!4v1731440548494!5m2!1ses-419!2smx" width="250" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div  class="containerUbicacionlinks">
+      <a class="containerUbicacion__link" href="index.html"><img class="containerUbicacion__img" src="img/logo-sin-fondo-claro.png" alt=""></a>
+      <a class="containerUbicacion__link" href="#">Conocer mas ubicaciones en Mexico</a>
+    </div>
+    </div>
+  </section>
+</main>
+
+   <!-- Footer -->
+
+    <footer class="bg-dark pt-4  footer">
+      <section class="container footer__section">
+        <div class="row container__footer">
+          <div class="col-md-2 mb-3 footer__section--aboutUs">
+            <h5 class="footer__section--title" >Sobre Nosotros</h5>
+            <p  class="footer__section--Text">Somos un hotel comprometido con brindar experiencias únicas y de calidad a nuestros clientes. Nuestro objetivo es tu confort y satisfacción.</p>
+          </div>
+          <div class="col-md-2 mb-3 footer__section--navegation">
+            <h5 class="footer__section--title">Enlaces Rápidos</h5>
+            <ul class="list-unstyled  footer__section--navegationList">
+              <li><a href="#" class="footer__section--navegationLink">Inicio</a></li>
+              <li><a href="#" class="footer__section--navegationLink">Habitaciones</a></li>
+              <li><a href="#" class="footer__section--navegationLink">Servicios</a></li>
+              <li><a href="#" class="footer__section--navegationLink">Hoteles</a></li>
+              <li><a href="#" class="footer__section--navegationLink">Promociones</a></li>
+              <li><a href="#" class="footer__section--navegationLink">Ciudades</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 mb-3 footer__section--contacto">
+            <h5 class="footer__section--title">Contáctanos</h5>
+            <ul class="list-unstyled footer__section--contactoLista">
+              <li>
+                <a href="tel:+521234566789" class="footer__section--contactoLink">+52 123 456 6789</a>
+              </li>
+              <li>
+                <a href="mailto:info@hotelMajestic.com" class="footer__section--contactoLink">info@hotelMajestic.com
+                </a>
+              </li>
+            </ul>
+          </div>
+          
+
+          <div class="col-md-2 mb-3 footer__section--socialMedia">
+            <h5 class="footer__section--title">Redes sociales</h5>
+            <ul class="list-unstyled footer__section--socialMedialista">
+              <li class="footer__section--socialMedialistaItem"><a class="footer__section--socialMedialink" href="https://www.facebook.com" target="_blank"><img class="footer__section--socialMediaimg" src="img/Facebook_logo.png" alt="Facebook">Facebook</a></li>
+              <li class="footer__section--socialMedialistaItem"><a class="footer__section--socialMedialink" href="https://www.twitter.com" target="_blank"><img class="footer__section--socialMediaimg" src="img/twiter logo.webp" alt="Twitter" >Twitter</a></li>
+              <li class="footer__section--socialMedialistaItem"><a class="footer__section--socialMedialink" href="https://www.instagram.com" target="_blank"><img class="footer__section--socialMediaimg" src="img/instagram logo.webp" alt="Twitter" >Instragram</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="text-center py-3 footer__section--containerCopyright">
+          <p  class="mb-0 footer__section--containerCopyrighttext">&copy; 2024 Hotel Majestic. Todos los derechos son reservados</p>
+        </div>
+      </section>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+

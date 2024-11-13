@@ -1,0 +1,168 @@
+.navbar,
+.carousel__card--title,
+.containerText__title,
+.tituloTiposhoteles__title,
+.carousel__itemContainer--title,
+.containerExperience__title,
+.containerExperience__text,
+.containerRanking__info--title,
+.containerContacto__title,
+.containerMap__title,
+.footer__section--title,
+.card-title{
+    font-family: $tipografiaTitulos;
+}
+
+.carousel__card--text,
+.carousel__card--link,
+.containerExperience__text,
+.containerRanking__info--text,
+.containerContacto__submit,
+.containerContacto__container--label,
+.footer__section--Text,
+.footer__section--navegationLink,
+.footer__section--socialMedialink,
+.footer__section--contactoLink,
+.footer__section--containerCopyrighttext,
+.containerUbicacion__link,
+.card-text,
+.container__grid--listItem,
+.container__grid--boldText{
+    font-family: $tipografiaCuerpo;
+}
+
+.containerUbicacion__link,
+.footer__section--navegationLink,
+.footer__section--contactoLink,
+.footer__section--socialMedialink{
+  text-decoration: $none;
+  color: $blanco;
+}
+
+.navbar{
+    background-color: $blanco;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.divider {
+  border-top: 2px solid #030303;
+}
+
+.carousel__card {
+  text-align: $justificado;
+}
+
+.carousel__card--text{
+  text-align: $justificado;
+}
+
+.carousel__card--link{
+  text-align: $center;
+  text-decoration: $none;
+}
+
+.containerText,
+.tituloTiposhoteles{
+  text-align: $center;
+}
+
+.containerKnowmore__card--link{
+  text-decoration: $none;
+}
+
+
+.carousel__itemContainer--title{
+  color: rgb(73, 82, 90);
+  font-size: 2.5rem;
+}
+
+.containerContacto{
+  background-color: #293348;
+  color: $blanco;
+}
+
+.containerMap__title{
+  text-align: $center;
+}
+
+.texto-input{
+  @include phones {
+      color: $blanco;
+      background-color: transparent;
+      border: $none;
+  }
+}
+
+.containerContacto__title{
+  text-align: $center;
+  color: $blanco;
+}
+
+.containerContacto__container--input:focus{
+  border-color: #5a9cff; /* Color de borde al enfocarse */
+  box-shadow: 0 0 10px rgba(90, 156, 255, 0.5);
+}
+
+.footer{
+  color: $blanco;
+}
+
+.footer__section--title{
+  text-align: center;
+  
+  @include phones{
+      text-align: start;
+  }
+}
+
+.footer__section--Text{
+  text-align: $justificado;
+}
+
+
+//Catalogo estilos 
+
+.container__grid--link{
+  text-decoration: $none;
+}
+
+.title{
+  text-align: $center;
+}
+
+.card-title{
+  text-align: $center;
+}
+
+.container__grid--boldText{
+    font-weight: 600;
+    text-align: $center;
+}
+
+//estilos barra de desplazamineto Catalogo
+
+.container__grid::-webkit-scrollbar {
+  width: 9px; 
+  height: 9px; 
+}
+
+.container__grid::-webkit-scrollbar-track {
+  background: #2C3E50; 
+  border-radius: 6px; 
+}
+
+.container__grid::-webkit-scrollbar-thumb {
+  background: #34495E; 
+  border-radius: 8px; 
+}
+
+.container__grid::-webkit-scrollbar-thumb:hover {
+  background: #1ABC9C; 
+}
+
+
+

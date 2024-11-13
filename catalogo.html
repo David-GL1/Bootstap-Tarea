@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo hoteles</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <!--  Fuente Playfair Display SC -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+     <!--  Fuente Lora-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+       <!-- Header -->
+       <header>
+
+        <!-- Barra con links -->
+          
+          <nav class="navbar navbar-expand-lg" data-bs-theme="light">
+              <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html">
+                      <img  class="logo__hotel" src="img/logo-hotel.png" alt="Bootstrap" >
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                  <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Habitaciones</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Promociones</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Ubicaciones
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-end"> <!-- Ajuste aplicado -->
+                        <li><a class="dropdown-item" href="#">Ciudad de Mexico</a></li>
+                        <li><a class="dropdown-item" href="#">Puebla</a></li>
+                        <li><a class="dropdown-item" href="#">Nuevo Leon</a></li>
+                        <li><a class="dropdown-item" href="#">Chihuahua</a></li>
+                        <li><a class="dropdown-item" href="#">Quintana Roo</a></li>
+                        <li><a class="dropdown-item" href="#">Guadalajara</a></li>
+                        <li><a class="dropdown-item" href="#">Aguascalientes</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>          
+      </header>
+
+      <!-- Hoteles disponobles en ciudades -->
+
+      <main class="main">
+
+            <div class="container main__container">
+      <h3 class="title">Ciudad de Mexico</h3>
+        <div class="row container__grid">
+          <div class= "col-sm-12 col-md-4  container__col">
+            <a href="" class="container__grid--link"><div class="card container__grid--card">
+              <img src="img/solo adultos.jpg" class="container__grid--img" alt="Solo adultos">
+              <div class="card-body">
+                <h5 class="card-title">Solo Adultos</h5>
+                <ul class="list container__grid--list">
+                  <li class="container__grid--listItem">Solo para adultos</li>
+                  <li class="container__grid--listItem">Ambiente relajante y exclusivo</li>
+                  <li class="container__grid--listItem">Habitaciones de lujo y privacidad garantizada</li>
+                  <li class="container__grid--listItem">Piscina y spa para el disfrute</li>
+                  <li class="container__grid--listItem">Ubicación tranquila, ideal para escapadas románticas</li>
+                </ul>
+                <p class="container__grid--boldText card-body">Costo: Hospedaje por día $1000 MXN</p>
+              </div>
+            </div>
+          </a>
+          </div>
+          <div class="col-sm-12 col-md-4  container__col">
+            <a href="" class="container__grid--link"><div class="card container__grid--card">
+              <img src="img/hotel-familiar.jpg" class="container__grid--img" alt="Hotel familiar">
+              <div class="card-body">
+                <h5 class="card-title">Familiar</h5>
+                <ul class="list container__grid--list">
+                  <li class="container__grid--listItem">Ambiente familiar y acogedor</li>
+                  <li class="container__grid--listItem">Habitaciones amplias para toda la familia</li>
+                  <li class="container__grid--listItem">Piscinas y áreas recreativas</li>
+                  <li class="container__grid--listItem">Actividades para todas las edades</li>
+                  <li class="container__grid--listItem">Restaurantes con opciones para niños</li>
+                  <li class="container__grid--listItem">Ubicación céntrica y accesible</li>
+                </ul>
+                <p class="container__grid--boldText card-body">Costo: Hospedaje por día $1000 MXN</p>                  
+              </div>
+            </div>
+          </a>
+          </div>
+          <div class="col-sm-12 col-md-4  container__col">
+            <a href="" class="container__grid--link"><div class="card container__grid--card">
+              <img src="img/apart hotel.jpg" class="container__grid--img" alt="Apart hotel">
+              <div class="card-body">
+                <h5 class="card-title">Apart-Hotel</h5>
+                <ul class="list container__grid--list">
+                  <li class="container__grid--listItem">Comodidad de hogar con servicios de hotel</li>
+                  <li class="container__grid--listItem">Apartamentos totalmente equipados</li>
+                  <li class="container__grid--listItem">Cocina privada en cada unidad</li>
+                  <li class="container__grid--listItem">Áreas comunes: piscina, gimnasio y lounge</li>
+                  <li class="container__grid--listItem">Ideal para estancias largas o cortas</li>
+                  <li class="container__grid--listItem">Ubicación conveniente cerca de tiendas y restaurantes</li>
+                </ul>                     
+                <p class="container__grid--boldText card-body">Costo: Hospedaje por día $1000 MXN</p>                  
+              </div>
+            </div>
+          </a>
+          </div>  
+          <div class="col-sm-12 col-md-4  container__col">
+            <a href="" class="container__grid--link"><div class="card container__grid--card">
+              <img src="img/hotel ecologico.jpg" class="container__grid--img"alt="Hotel ecologico">
+              <div class="card-body">
+                <h5 class="card-title">Ecologico</h5>
+                <ul class="list container__grid--list">
+                  <li class="container__grid--listItem">Diseño y construcción sostenible con materiales ecológicos</li>
+                  <li class="container__grid--listItem">Uso de energías renovables (solar, eólica, etc.)</li>
+                  <li class="container__grid--listItem">Conservación del entorno natural y paisajismo ecológico</li>
+                  <li class="container__grid--listItem">Ofrecemos productos locales y orgánicos en nuestro restaurante</li>
+                </ul>            
+                <p class="container__grid--boldText card-body">Costo: Hospedaje por día $1000 MXN</p>
+              </div>
+            </div>
+          </a>
+          </div>
+          <div class="col-sm-12 col-md-4  container__col">
+            <a href="" class="container__grid--link"><div class="card container__grid--card">
+              <img src="img/hotel-tematico.jpg" class="container__grid--img" alt="Hotel tematico">
+              <div class="card-body">
+                <h5 class="card-title">Tematico</h5>
+                <ul class="list container__grid--list">
+                  <li class="container__grid--listItem">Habitaciones diseñadas para sumergir a los huéspedes en la temática</li>
+                  <li class="container__grid--listItem">Actividades y eventos relacionados con el tema del hotel</li>
+                  <li class="container__grid--listItem">Restaurante con menú temático y decoración especial</li>
+                  <li class="container__grid--listItem">Ideal para familias, grupos o fanáticos del tema</li>
+                </ul>                    
+                <p class="container__grid--boldText card-body">Costo: Hospedaje por día $1000 MXN</p>
+              </div>
+            </div>
+          </a>
+          </div>        
+      </div>
+
+      <div class="container__carousel">
+        <h3 class="title">Puebla</h3>
+          <div class="row container__grid">
+            <div class="col-sm-12 col-md-4  container__col">
+              <a href="" class="container__grid--link"><div class="card container__grid--card">
+                <img src="img/solo adultos.jpg" class="container__grid--img" alt="Solo adultos">
+                <div class="card-body">
+                  <h5 class="card-title">Solo Adultos</h5>
+                  <ul class="list container__grid--list">
+                    <li class="container__grid--listItem">Solo para adultos</li>
+                    <li class="container__grid--listItem">Ambiente relajante y exclusivo</li>
+                    <li class="container__grid--listItem">Habitaciones de lujo y privacidad garantizada</li>
+                    <li class="container__grid--listItem">Piscina y spa para el disfrute</li>
+                    <li class="container__grid--listItem">Ubicación tranquila, ideal para escapadas románticas</li>
+                  </ul>
+                  <p class="container__grid--boldText card-body">Costo: Hospedaje por día $1000 MXN</p>
+                </div>
+              </div>
+            </a>
+            </div>
+            <div class="col-sm-12 col-md-4  container__col">
+              <a href="" class="container__grid--link"><div class="card container__grid--card">
+                <img src="img/hotel-familiar.jpg" class="container__grid--img" alt="Hotel familiar">
+                <div class="card-body">
+                  <h5 class="card-title">Familiar</h5>
+                  <ul class="list container__grid--list">
+                    <li class="container__grid--listItem">Ambiente familiar y acogedor</li>
+                    <li class="container__grid--listItem">Habitaciones amplias para toda la familia</li>
+                    <li class="container__grid--listItem">Piscinas y áreas recreativas</li>
+                    <li class="container__grid--listItem">Actividades para todas las edades</li>
+                    <li class="container__grid--listItem">Restaurantes con opciones para niños</li>
+                    <li class="container__grid--listItem">Ubicación céntrica y accesible</li>
+                  </ul>
+                  <p class="container__grid--boldText card-body">Costo: Hospedaje por día $1000 MXN</p>                  
+                </div>
+              </div>
+            </a>
+            </div>
+            <div class="col-sm-12 col-md-4  container__col">
+              <a href="" class="container__grid--link"><div class="card container__grid--card">
+                <img src="img/apart hotel.jpg" class="container__grid--img" alt="Apart hotel">
+                <div class="card-body">
+                  <h5 class="card-title">Apart-Hotel</h5>
+                  <ul class="list container__grid--list">
+                    <li class="container__grid--listItem">Comodidad de hogar con servicios de hotel</li>
+                    <li class="container__grid--listItem">Apartamentos totalmente equipados</li>
+                    <li class="container__grid--listItem">Cocina privada en cada unidad</li>
+                    <li class="container__grid--listItem">Áreas comunes: piscina, gimnasio y lounge</li>
+                    <li class="container__grid--listItem">Ideal para estancias largas o cortas</li>
+                    <li class="container__grid--listItem">Ubicación conveniente cerca de tiendas y restaurantes</li>
+                  </ul>                     
+                  <p class="container__grid--boldText card-body">Costo: Hospedaje por día $1000 MXN</p>                  
+                </div>
+              </div>
+            </a>
+            </div>  
+            <div class="col-sm-12 col-md-4  container__col">
+              <a href="" class="container__grid--link"><div class="card container__grid--card">
+                <img src="img/hotel ecologico.jpg" class="container__grid--img"alt="Hotel ecologico">
+                <div class="card-body">
+                  <h5 class="card-title">Ecologico</h5>
+                  <ul class="list container__grid--list">
+                    <li class="container__grid--listItem">Diseño y construcción sostenible con materiales ecológicos</li>
+                    <li class="container__grid--listItem">Uso de energías renovables (solar, eólica, etc.)</li>
+                    <li class="container__grid--listItem">Conservación del entorno natural y paisajismo ecológico</li>
+                    <li class="container__grid--listItem">Ofrecemos productos locales y orgánicos en nuestro restaurante</li>
+                  </ul>            
+                  <p class="container__grid--boldText card-body">Costo: Hospedaje por día $1000 MXN</p>
+                </div>
+              </div>
+            </a>
+            </div>
+            <div class="col-sm-12 col-md-4  container__col">
+              <a href="" class="container__grid--link"><div class="card container__grid--card">
+                <img src="img/hotel-tematico.jpg" class="container__grid--img" alt="Hotel tematico">
+                <div class="card-body">
+                  <h5 class="card-title">Tematico</h5>
+                  <ul class="list container__grid--list">
+                    <li class="container__grid--listItem">Habitaciones diseñadas para sumergir a los huéspedes en la temática</li>
+                    <li class="container__grid--listItem">Actividades y eventos relacionados con el tema del hotel</li>
+                    <li class="container__grid--listItem">Restaurante con menú temático y decoración especial</li>
+                    <li class="container__grid--listItem">Ideal para familias, grupos o fanáticos del tema</li>
+                  </ul>                    
+                  <p class="container__grid--boldText card-body">Costo: Hospedaje por día $1000 MXN</p>
+                </div>
+              </div>
+            </a>
+            </div>        
+        </div>
+
+        <div class="container__carousel">
+          <h3 class="title">Nuevo Leon</h3>
+            <div class="row container__grid">
+              <div class="col-sm-12 col-md-4  container__col">
+                <a href="" class="container__grid--link"><div class="card container__grid--card">
+                  <img src="img/solo adultos.jpg" class="container__grid--img" alt="Solo adultos">
+                  <div class="card-body">
+                    <h5 class="card-title">Solo Adultos</h5>
+                    <ul class="list container__grid--list">
+                      <li class="container__grid--listItem">Solo para adultos</li>
+                      <li class="container__grid--listItem">Ambiente relajante y exclusivo</li>
+                      <li class="container__grid--listItem">Habitaciones de lujo y privacidad garantizada</li>
+                      <li class="container__grid--listItem">Piscina y spa para el disfrute</li>
+                      <li class="container__grid--listItem">Ubicación tranquila, ideal para escapadas románticas</li>
+                    </ul>
+                    <p class="container__grid--boldText card-body">Costo: Hospedaje por día $1000 MXN</p>
+                  </div>
+                </div>
+              </a>
+              </div>
+              <div class="col-sm-12 col-md-4  container__col">
+                <a href="" class="container__grid--link"><div class="card container__grid--card">
+                  <img src="img/hotel-familiar.jpg" class="container__grid--img" alt="Hotel familiar">
+                  <div class="card-body">
+                    <h5 class="card-title">Familiar</h5>
+                    <ul class="list container__grid--list">
+                      <li class="container__grid--listItem">Ambiente familiar y acogedor</li>
+                      <li class="container__grid--listItem">Habitaciones amplias para toda la familia</li>
+                      <li class="container__grid--listItem">Piscinas y áreas recreativas</li>
+                      <li class="container__grid--listItem">Actividades para todas las edades</li>
+                      <li class="container__grid--listItem">Restaurantes con opciones para niños</li>
+                      <li class="container__grid--listItem">Ubicación céntrica y accesible</li>
+                    </ul>
+                    <p class="container__grid--boldText card-body">Costo: Hospedaje por día $1000 MXN</p>                  
+                  </div>
+                </div>
+              </a>
+              </div>
+              <div class="col-sm-12 col-md-4  container__col">
+                <a href="" class="container__grid--link"><div class="card container__grid--card">
+                  <img src="img/apart hotel.jpg" class="container__grid--img" alt="Apart hotel">
+                  <div class="card-body">
+                    <h5 class="card-title">Apart-Hotel</h5>
+                    <ul class="list container__grid--list">
+                      <li class="container__grid--listItem">Comodidad de hogar con servicios de hotel</li>
+                      <li class="container__grid--listItem">Apartamentos totalmente equipados</li>
+                      <li class="container__grid--listItem">Cocina privada en cada unidad</li>
+                      <li class="container__grid--listItem">Áreas comunes: piscina, gimnasio y lounge</li>
+                      <li class="container__grid--listItem">Ideal para estancias largas o cortas</li>
+                      <li class="container__grid--listItem">Ubicación conveniente cerca de tiendas y restaurantes</li>
+                    </ul>                     
+                    <p class="container__grid--boldText card-body">Costo: Hospedaje por día $1000 MXN</p>                  
+                  </div>
+                </div>
+              </a>
+              </div>  
+              <div class="col-sm-12 col-md-4  container__col">
+                <a href="" class="container__grid--link"><div class="card container__grid--card">
+                  <img src="img/hotel ecologico.jpg" class="container__grid--img"alt="Hotel ecologico">
+                  <div class="card-body">
+                    <h5 class="card-title">Ecologico</h5>
+                    <ul class="list container__grid--list">
+                      <li class="container__grid--listItem">Diseño y construcción sostenible con materiales ecológicos</li>
+                      <li class="container__grid--listItem">Uso de energías renovables (solar, eólica, etc.)</li>
+                      <li class="container__grid--listItem">Conservación del entorno natural y paisajismo ecológico</li>
+                      <li class="container__grid--listItem">Ofrecemos productos locales y orgánicos en nuestro restaurante</li>
+                    </ul>            
+                    <p class="container__grid--boldText card-body">Costo: Hospedaje por día $1000 MXN</p>
+                  </div>
+                </div>
+              </a>
+              </div>
+              <div class="col-sm-12 col-md-4  container__col">
+                <a href="" class="container__grid--link"><div class="card container__grid--card">
+                  <img src="img/hotel-tematico.jpg" class="container__grid--img" alt="Hotel tematico">
+                  <div class="card-body">
+                    <h5 class="card-title">Tematico</h5>
+                    <ul class="list container__grid--list">
+                      <li class="container__grid--listItem">Habitaciones diseñadas para sumergir a los huéspedes en la temática</li>
+                      <li class="container__grid--listItem">Actividades y eventos relacionados con el tema del hotel</li>
+                      <li class="container__grid--listItem">Restaurante con menú temático y decoración especial</li>
+                      <li class="container__grid--listItem">Ideal para familias, grupos o fanáticos del tema</li>
+                    </ul>                    
+                    <p class="container__grid--boldText card-body">Costo: Hospedaje por día $1000 MXN</p>
+                  </div>
+                </div>
+              </a>
+              </div>        
+          </div>
+
+          <div class="container__carousel">
+            <h3 class="title">Chihuahua</h3>
+              <div class="row container__grid">
+                <div class="col-sm-12 col-md-4  container__col">
+                  <a href="" class="container__grid--link"><div class="card container__grid--card">
+                    <img src="img/solo adultos.jpg" class="container__grid--img" alt="Solo adultos">
+                    <div class="card-body">
+                      <h5 class="card-title">Solo Adultos</h5>
+                      <ul class="list container__grid--list">
+                        <li class="container__grid--listItem">Solo para adultos</li>
+                        <li class="container__grid--listItem">Ambiente relajante y exclusivo</li>
+                        <li class="container__grid--listItem">Habitaciones de lujo y privacidad garantizada</li>
+                        <li class="container__grid--listItem">Piscina y spa para el disfrute</li>
+                        <li class="container__grid--listItem">Ubicación tranquila, ideal para escapadas románticas</li>
+                      </ul>
+                      <p class="container__grid--boldText card-body">Costo: Hospedaje por día $1000 MXN</p>
+                    </div>
+                  </div>
+                </a>
+                </div>
+                <div class="col-sm-12 col-md-4  container__col">
+                  <a href="" class="container__grid--link"><div class="card container__grid--card">
+                    <img src="img/hotel-familiar.jpg" class="container__grid--img" alt="Hotel familiar">
+                    <div class="card-body">
+                      <h5 class="card-title">Familiar</h5>
+                      <ul class="list container__grid--list">
+                        <li class="container__grid--listItem">Ambiente familiar y acogedor</li>
+                        <li class="container__grid--listItem">Habitaciones amplias para toda la familia</li>
+                        <li class="container__grid--listItem">Piscinas y áreas recreativas</li>
+                        <li class="container__grid--listItem">Actividades para todas las edades</li>
+                        <li class="container__grid--listItem">Restaurantes con opciones para niños</li>
+                        <li class="container__grid--listItem">Ubicación céntrica y accesible</li>
+                      </ul>
+                      <p class="container__grid--boldText card-body">Costo: Hospedaje por día $1000 MXN</p>                  
+                    </div>
+                  </div>
+                </a>
+                </div>
+                <div class="col-sm-12 col-md-4  container__col">
+                  <a href="" class="container__grid--link"><div class="card container__grid--card">
+                    <img src="img/apart hotel.jpg" class="container__grid--img" alt="Apart hotel">
+                    <div class="card-body">
+                      <h5 class="card-title">Apart-Hotel</h5>
+                      <ul class="list container__grid--list">
+                        <li class="container__grid--listItem">Comodidad de hogar con servicios de hotel</li>
+                        <li class="container__grid--listItem">Apartamentos totalmente equipados</li>
+                        <li class="container__grid--listItem">Cocina privada en cada unidad</li>
+                        <li class="container__grid--listItem">Áreas comunes: piscina, gimnasio y lounge</li>
+                        <li class="container__grid--listItem">Ideal para estancias largas o cortas</li>
+                        <li class="container__grid--listItem">Ubicación conveniente cerca de tiendas y restaurantes</li>
+                      </ul>                     
+                      <p class="container__grid--boldText card-body">Costo: Hospedaje por día $1000 MXN</p>                  
+                    </div>
+                  </div>
+                </a>
+                </div>  
+                <div class="col-sm-12 col-md-4  container__col">
+                  <a href="" class="container__grid--link"><div class="card container__grid--card">
+                    <img src="img/hotel ecologico.jpg" class="container__grid--img"alt="Hotel ecologico">
+                    <div class="card-body">
+                      <h5 class="card-title">Ecologico</h5>
+                      <ul class="list container__grid--list">
+                        <li class="container__grid--listItem">Diseño y construcción sostenible con materiales ecológicos</li>
+                        <li class="container__grid--listItem">Uso de energías renovables (solar, eólica, etc.)</li>
+                        <li class="container__grid--listItem">Conservación del entorno natural y paisajismo ecológico</li>
+                        <li class="container__grid--listItem">Ofrecemos productos locales y orgánicos en nuestro restaurante</li>
+                      </ul>            
+                      <p class="container__grid--boldText card-body">Costo: Hospedaje por día $1000 MXN</p>
+                    </div>
+                  </div>
+                </a>
+                </div>
+                <div class="col-sm-12 col-md-4  container__col">
+                  <a href="" class="container__grid--link"><div class="card container__grid--card">
+                    <img src="img/hotel-tematico.jpg" class="container__grid--img" alt="Hotel tematico">
+                    <div class="card-body">
+                      <h5 class="card-title">Tematico</h5>
+                      <ul class="list container__grid--list">
+                        <li class="container__grid--listItem">Habitaciones diseñadas para sumergir a los huéspedes en la temática</li>
+                        <li class="container__grid--listItem">Actividades y eventos relacionados con el tema del hotel</li>
+                        <li class="container__grid--listItem">Restaurante con menú temático y decoración especial</li>
+                        <li class="container__grid--listItem">Ideal para familias, grupos o fanáticos del tema</li>
+                      </ul>                    
+                      <p class="container__grid--boldText card-body">Costo: Hospedaje por día $1000 MXN</p>
+                    </div>
+                  </div>
+                </a>
+                </div>        
+            </div>
+
+            <div class="container__carousel">
+              <h3 class="title">Quintana Roo</h3>
+                <div class="row container__grid">
+                  <div class="col-sm-12 col-md-4  container__col">
+                    <a href="" class="container__grid--link"><div class="card container__grid--card">
+                      <img src="img/solo adultos.jpg" class="container__grid--img" alt="Solo adultos">
+                      <div class="card-body">
+                        <h5 class="card-title">Solo Adultos</h5>
+                        <ul class="list container__grid--list">
+                          <li class="container__grid--listItem">Solo para adultos</li>
+                          <li class="container__grid--listItem">Ambiente relajante y exclusivo</li>
+                          <li class="container__grid--listItem">Habitaciones de lujo y privacidad garantizada</li>
+                          <li class="container__grid--listItem">Piscina y spa para el disfrute</li>
+                          <li class="container__grid--listItem">Ubicación tranquila, ideal para escapadas románticas</li>
+                        </ul>
+                        <p class="container__grid--boldText card-body">Costo: Hospedaje por día $1000 MXN</p>
+                      </div>
+                    </div>
+                  </a>
+                  </div>
+                  <div class="col-sm-12 col-md-4  container__col">
+                    <a href="" class="container__grid--link"><div class="card container__grid--card">
+                      <img src="img/hotel-familiar.jpg" class="container__grid--img" alt="Hotel familiar">
+                      <div class="card-body">
+                        <h5 class="card-title">Familiar</h5>
+                        <ul class="list container__grid--list">
+                          <li class="container__grid--listItem">Ambiente familiar y acogedor</li>
+                          <li class="container__grid--listItem">Habitaciones amplias para toda la familia</li>
+                          <li class="container__grid--listItem">Piscinas y áreas recreativas</li>
+                          <li class="container__grid--listItem">Actividades para todas las edades</li>
+                          <li class="container__grid--listItem">Restaurantes con opciones para niños</li>
+                          <li class="container__grid--listItem">Ubicación céntrica y accesible</li>
+                        </ul>
+                        <p class="container__grid--boldText card-body">Costo: Hospedaje por día $1000 MXN</p>                  
+                      </div>
+                    </div>
+                  </a>
+                  </div>
+                  <div class="col-sm-12 col-md-4  container__col">
+                    <a href="" class="container__grid--link"><div class="card container__grid--card">
+                      <img src="img/apart hotel.jpg" class="container__grid--img" alt="Apart hotel">
+                      <div class="card-body">
+                        <h5 class="card-title">Apart-Hotel</h5>
+                        <ul class="list container__grid--list">
+                          <li class="container__grid--listItem">Comodidad de hogar con servicios de hotel</li>
+                          <li class="container__grid--listItem">Apartamentos totalmente equipados</li>
+                          <li class="container__grid--listItem">Cocina privada en cada unidad</li>
+                          <li class="container__grid--listItem">Áreas comunes: piscina, gimnasio y lounge</li>
+                          <li class="container__grid--listItem">Ideal para estancias largas o cortas</li>
+                          <li class="container__grid--listItem">Ubicación conveniente cerca de tiendas y restaurantes</li>
+                        </ul>                     
+                        <p class="container__grid--boldText card-body">Costo: Hospedaje por día $1000 MXN</p>                  
+                      </div>
+                    </div>
+                  </a>
+                  </div>  
+                  <div class="col-sm-12 col-md-4  container__col">
+                    <a href="" class="container__grid--link"><div class="card container__grid--card">
+                      <img src="img/hotel ecologico.jpg" class="container__grid--img"alt="Hotel ecologico">
+                      <div class="card-body">
+                        <h5 class="card-title">Ecologico</h5>
+                        <ul class="list container__grid--list">
+                          <li class="container__grid--listItem">Diseño y construcción sostenible con materiales ecológicos</li>
+                          <li class="container__grid--listItem">Uso de energías renovables (solar, eólica, etc.)</li>
+                          <li class="container__grid--listItem">Conservación del entorno natural y paisajismo ecológico</li>
+                          <li class="container__grid--listItem">Ofrecemos productos locales y orgánicos en nuestro restaurante</li>
+                        </ul>            
+                        <p class="container__grid--boldText card-body">Costo: Hospedaje por día $1000 MXN</p>
+                      </div>
+                    </div>
+                  </a>
+                  </div>
+                  <div class="col-sm-12 col-md-4  container__col">
+                    <a href="" class="container__grid--link"><div class="card container__grid--card">
+                      <img src="img/hotel-tematico.jpg" class="container__grid--img" alt="Hotel tematico">
+                      <div class="card-body">
+                        <h5 class="card-title">Tematico</h5>
+                        <ul class="list container__grid--list">
+                          <li class="container__grid--listItem">Habitaciones diseñadas para sumergir a los huéspedes en la temática</li>
+                          <li class="container__grid--listItem">Actividades y eventos relacionados con el tema del hotel</li>
+                          <li class="container__grid--listItem">Restaurante con menú temático y decoración especial</li>
+                          <li class="container__grid--listItem">Ideal para familias, grupos o fanáticos del tema</li>
+                        </ul>                    
+                        <p class="container__grid--boldText card-body">Costo: Hospedaje por día $1000 MXN</p>
+                      </div>
+                    </div>
+                  </a>
+                  </div>        
+              </div>
+
+              <div class="container__carousel">
+                <h3 class="title">Jalisco</h3>
+                  <div class="row container__grid">
+                    <div class="col-sm-12 col-md-4  container__col">
+                      <a href="" class="container__grid--link"><div class="card container__grid--card">
+                        <img src="img/solo adultos.jpg" class="container__grid--img" alt="Solo adultos">
+                        <div class="card-body">
+                          <h5 class="card-title">Solo Adultos</h5>
+                          <ul class="list container__grid--list">
+                            <li class="container__grid--listItem">Solo para adultos</li>
+                            <li class="container__grid--listItem">Ambiente relajante y exclusivo</li>
+                            <li class="container__grid--listItem">Habitaciones de lujo y privacidad garantizada</li>
+                            <li class="container__grid--listItem">Piscina y spa para el disfrute</li>
+                            <li class="container__grid--listItem">Ubicación tranquila, ideal para escapadas románticas</li>
+                          </ul>
+                          <p class="container__grid--boldText card-body">Costo: Hospedaje por día $1000 MXN</p>
+                        </div>
+                      </div>
+                    </a>
+                    </div>
+                    <div class="col-sm-12 col-md-4  container__col">
+                      <a href="" class="container__grid--link"><div class="card container__grid--card">
+                        <img src="img/hotel-familiar.jpg" class="container__grid--img" alt="Hotel familiar">
+                        <div class="card-body">
+                          <h5 class="card-title">Familiar</h5>
+                          <ul class="list container__grid--list">
+                            <li class="container__grid--listItem">Ambiente familiar y acogedor</li>
+                            <li class="container__grid--listItem">Habitaciones amplias para toda la familia</li>
+                            <li class="container__grid--listItem">Piscinas y áreas recreativas</li>
+                            <li class="container__grid--listItem">Actividades para todas las edades</li>
+                            <li class="container__grid--listItem">Restaurantes con opciones para niños</li>
+                            <li class="container__grid--listItem">Ubicación céntrica y accesible</li>
+                          </ul>
+                          <p class="container__grid--boldText card-body">Costo: Hospedaje por día $1000 MXN</p>                  
+                        </div>
+                      </div>
+                    </a>
+                    </div>
+                    <div class="col-sm-12 col-md-4  container__col">
+                      <a href="" class="container__grid--link"><div class="card container__grid--card">
+                        <img src="img/apart hotel.jpg" class="container__grid--img" alt="Apart hotel">
+                        <div class="card-body">
+                          <h5 class="card-title">Apart-Hotel</h5>
+                          <ul class="list container__grid--list">
+                            <li class="container__grid--listItem">Comodidad de hogar con servicios de hotel</li>
+                            <li class="container__grid--listItem">Apartamentos totalmente equipados</li>
+                            <li class="container__grid--listItem">Cocina privada en cada unidad</li>
+                            <li class="container__grid--listItem">Áreas comunes: piscina, gimnasio y lounge</li>
+                            <li class="container__grid--listItem">Ideal para estancias largas o cortas</li>
+                            <li class="container__grid--listItem">Ubicación conveniente cerca de tiendas y restaurantes</li>
+                          </ul>                     
+                          <p class="container__grid--boldText card-body">Costo: Hospedaje por día $1000 MXN</p>                  
+                        </div>
+                      </div>
+                    </a>
+                    </div>  
+                    <div class="col-sm-12 col-md-4  container__col">
+                      <a href="" class="container__grid--link"><div class="card container__grid--card">
+                        <img src="img/hotel ecologico.jpg" class="container__grid--img"alt="Hotel ecologico">
+                        <div class="card-body">
+                          <h5 class="card-title">Ecologico</h5>
+                          <ul class="list container__grid--list">
+                            <li class="container__grid--listItem">Diseño y construcción sostenible con materiales ecológicos</li>
+                            <li class="container__grid--listItem">Uso de energías renovables (solar, eólica, etc.)</li>
+                            <li class="container__grid--listItem">Conservación del entorno natural y paisajismo ecológico</li>
+                            <li class="container__grid--listItem">Ofrecemos productos locales y orgánicos en nuestro restaurante</li>
+                          </ul>            
+                          <p class="container__grid--boldText card-body">Costo: Hospedaje por día $1000 MXN</p>
+                        </div>
+                      </div>
+                    </a>
+                    </div>
+                    <div class="col-sm-12 col-md-4  container__col">
+                      <a href="" class="container__grid--link"><div class="card container__grid--card">
+                        <img src="img/hotel-tematico.jpg" class="container__grid--img" alt="Hotel tematico">
+                        <div class="card-body">
+                          <h5 class="card-title">Tematico</h5>
+                          <ul class="list container__grid--list">
+                            <li class="container__grid--listItem">Habitaciones diseñadas para sumergir a los huéspedes en la temática</li>
+                            <li class="container__grid--listItem">Actividades y eventos relacionados con el tema del hotel</li>
+                            <li class="container__grid--listItem">Restaurante con menú temático y decoración especial</li>
+                            <li class="container__grid--listItem">Ideal para familias, grupos o fanáticos del tema</li>
+                          </ul>                    
+                          <p class="container__grid--boldText card-body">Costo: Hospedaje por día $1000 MXN</p>
+                        </div>
+                      </div>
+                    </a>
+                    </div>        
+                </div>
+
+                <div class="container__carousel">
+                  <h3 class="title">Aguascalientes</h3>
+                    <div class="row container__grid">
+                      <div class="col-sm-12 col-md-4  container__col">
+                        <a href="" class="container__grid--link"><div class="card container__grid--card">
+                          <img src="img/solo adultos.jpg" class="container__grid--img" alt="Solo adultos">
+                          <div class="card-body">
+                            <h5 class="card-title">Solo Adultos</h5>
+                            <ul class="list container__grid--list">
+                              <li class="container__grid--listItem">Solo para adultos</li>
+                              <li class="container__grid--listItem">Ambiente relajante y exclusivo</li>
+                              <li class="container__grid--listItem">Habitaciones de lujo y privacidad garantizada</li>
+                              <li class="container__grid--listItem">Piscina y spa para el disfrute</li>
+                              <li class="container__grid--listItem">Ubicación tranquila, ideal para escapadas románticas</li>
+                            </ul>
+                            <p class="container__grid--boldText card-body">Costo: Hospedaje por día $1000 MXN</p>
+                          </div>
+                        </div>
+                      </a>
+                      </div>
+                      <div class="col-sm-12 col-md-4  container__col">
+                        <a href="" class="container__grid--link"><div class="card container__grid--card">
+                          <img src="img/hotel-familiar.jpg" class="container__grid--img" alt="Hotel familiar">
+                          <div class="card-body">
+                            <h5 class="card-title">Familiar</h5>
+                            <ul class="list container__grid--list">
+                              <li class="container__grid--listItem">Ambiente familiar y acogedor</li>
+                              <li class="container__grid--listItem">Habitaciones amplias para toda la familia</li>
+                              <li class="container__grid--listItem">Piscinas y áreas recreativas</li>
+                              <li class="container__grid--listItem">Actividades para todas las edades</li>
+                              <li class="container__grid--listItem">Restaurantes con opciones para niños</li>
+                              <li class="container__grid--listItem">Ubicación céntrica y accesible</li>
+                            </ul>
+                            <p class="container__grid--boldText card-body">Costo: Hospedaje por día $1000 MXN</p>                  
+                          </div>
+                        </div>
+                      </a>
+                      </div>
+                      <div class="col-sm-12 col-md-4  container__col">
+                        <a href="" class="container__grid--link"><div class="card container__grid--card">
+                          <img src="img/apart hotel.jpg" class="container__grid--img" alt="Apart hotel">
+                          <div class="card-body">
+                            <h5 class="card-title">Apart-Hotel</h5>
+                            <ul class="list container__grid--list">
+                              <li class="container__grid--listItem">Comodidad de hogar con servicios de hotel</li>
+                              <li class="container__grid--listItem">Apartamentos totalmente equipados</li>
+                              <li class="container__grid--listItem">Cocina privada en cada unidad</li>
+                              <li class="container__grid--listItem">Áreas comunes: piscina, gimnasio y lounge</li>
+                              <li class="container__grid--listItem">Ideal para estancias largas o cortas</li>
+                              <li class="container__grid--listItem">Ubicación conveniente cerca de tiendas y restaurantes</li>
+                            </ul>                     
+                            <p class="container__grid--boldText card-body">Costo: Hospedaje por día $1000 MXN</p>                  
+                          </div>
+                        </div>
+                      </a>
+                      </div>  
+                      <div class="col-sm-12 col-md-4  container__col">
+                        <a href="" class="container__grid--link"><div class="card container__grid--card">
+                          <img src="img/hotel ecologico.jpg" class="container__grid--img"alt="Hotel ecologico">
+                          <div class="card-body">
+                            <h5 class="card-title">Ecologico</h5>
+                            <ul class="list container__grid--list">
+                              <li class="container__grid--listItem">Diseño y construcción sostenible con materiales ecológicos</li>
+                              <li class="container__grid--listItem">Uso de energías renovables (solar, eólica, etc.)</li>
+                              <li class="container__grid--listItem">Conservación del entorno natural y paisajismo ecológico</li>
+                              <li class="container__grid--listItem">Ofrecemos productos locales y orgánicos en nuestro restaurante</li>
+                            </ul>            
+                            <p class="container__grid--boldText card-body">Costo: Hospedaje por día $1000 MXN</p>
+                          </div>
+                        </div>
+                      </a>
+                      </div>
+                      <div class="col-sm-12 col-md-4  container__col">
+                        <a href="" class="container__grid--link"><div class="card container__grid--card">
+                          <img src="img/hotel-tematico.jpg" class="container__grid--img" alt="Hotel tematico">
+                          <div class="card-body">
+                            <h5 class="card-title">Tematico</h5>
+                            <ul class="list container__grid--list">
+                              <li class="container__grid--listItem">Habitaciones diseñadas para sumergir a los huéspedes en la temática</li>
+                              <li class="container__grid--listItem">Actividades y eventos relacionados con el tema del hotel</li>
+                              <li class="container__grid--listItem">Restaurante con menú temático y decoración especial</li>
+                              <li class="container__grid--listItem">Ideal para familias, grupos o fanáticos del tema</li>
+                            </ul>                    
+                            <p class="container__grid--boldText card-body">Costo: Hospedaje por día $1000 MXN</p>
+                          </div>
+                        </div>
+                      </a>
+                      </div>        
+                  </div>
+      </main>
+
+       <!-- Footer -->
+
+    <footer class="bg-dark pt-4 footer">
+      <section class="container footer__section">
+        <div class="row d-flex justify-content-between">
+          <div class="col-md-2 mb-3 footer__section--aboutUs">
+            <h5 class="footer__section--title" >Sobre Nosotros</h5>
+            <p  class="footer__section--Text">Somos un hotel comprometido con brindar experiencias únicas y de calidad a nuestros clientes. Nuestro objetivo es tu confort y satisfacción.</p>
+          </div>
+          <div class="col-md-2 mb-3 footer__section--navegation">
+            <h5 class="footer__section--title">Enlaces Rápidos</h5>
+            <ul class="list-unstyled  footer__section--navegationList">
+              <li><a href="#" class="footer__section--navegationLink">Inicio</a></li>
+              <li><a href="#" class="footer__section--navegationLink">Habitaciones</a></li>
+              <li><a href="#" class="footer__section--navegationLink">Servicios</a></li>
+              <li><a href="#" class="footer__section--navegationLink">Hoteles</a></li>
+              <li><a href="#" class="footer__section--navegationLink">Promociones</a></li>
+              <li><a href="#" class="footer__section--navegationLink">Ciudades</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 mb-3 footer__section--contacto">
+            <h5 class="footer__section--title">Contáctanos</h5>
+            <ul class="list-unstyled footer__section--contactoLista">
+              <li>
+                <a href="tel:+521234566789" class="footer__section--contactoLink">+52 123 456 6789</a>
+              </li>
+              <li>
+                <a href="mailto:info@hotelMajestic.com" class="footer__section--contactoLink">info@hotelMajestic.com
+                </a>
+              </li>
+            </ul>
+          </div>
+          
+
+          <div class="col-md-2 mb-3 footer__section--socialMedia">
+            <h5 class="footer__section--socialMediatitle">Redes sociales</h5>
+            <ul class="list-unstyled footer__section--socialMedialista">
+              <li class="footer__section--socialMedialistaItem"><a class="footer__section--socialMedialink" href="https://www.facebook.com" target="_blank"><img class="footer__section--socialMediaimg" src="img/Facebook_logo.png" alt="Facebook">Facebook</a></li>
+              <li class="footer__section--socialMedialistaItem"><a class="footer__section--socialMedialink" href="https://www.twitter.com" target="_blank"><img class="footer__section--socialMediaimg" src="img/twiter logo.webp" alt="Twitter" >Twitter</a></li>
+              <li class="footer__section--socialMedialistaItem"><a class="footer__section--socialMedialink" href="https://www.instagram.com" target="_blank"><img class="footer__section--socialMediaimg" src="img/instagram logo.webp" alt="Twitter" >Instragram</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="text-center py-3 footer__section--containerCopyright">
+          <p  class="mb-0 footer__section--containerCopyrighttext">&copy; 2024 Hotel Majestic. Todos los derechos son reservados</p>
+        </div>
+      </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>

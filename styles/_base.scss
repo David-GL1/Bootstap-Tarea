@@ -1,0 +1,47 @@
+
+//Variables
+
+$tipografiaTitulos:"Playfair Display SC", serif;
+$tipografiaCuerpo: "Lora", serif;
+$fullSize: 100%;
+$none: none;
+$blanco: #FFFFFF;
+$center: center;
+$justificado: justify;
+
+
+//Mixins
+
+@mixin flex-center-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-layout($direction: column, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+}
+
+//Mixins con media queries
+
+@mixin phones { 
+    @media screen and (max-width: 40rem) { 
+        @content; 
+    } 
+}
+
+@mixin tablets { 
+    @media screen and (min-width: 40rem) and (max-width: 56.25rem) { 
+      @content; 
+    } 
+  }
+
+@mixin no-hover {
+    @media (hover: none) and (pointer: coarse) {
+        @content;
+    }
+}
+  
